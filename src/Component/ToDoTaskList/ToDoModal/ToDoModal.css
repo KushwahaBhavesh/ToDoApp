@@ -1,0 +1,23 @@
+.card {
+  padding: 5px 15px;
+  display: grid;
+  grid-template-columns: 50% 35% 15%;
+  grid-gap: 5px;
+  align-items: center;
+  background-color: rgb(84, 235, 127);
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgb(189, 203, 220), -4px -4px 8px rgb(255 255 255);
+  height: calc(100% - 30px);
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 15px;
+  border: none;
+  text-transform: capitalize;
+  background-color: red;
+  font-weight: 600;
+  color: #fff;  
+}

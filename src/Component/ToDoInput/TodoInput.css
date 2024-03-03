@@ -1,0 +1,34 @@
+.Form-Container {
+  display: grid;
+  grid-template-columns: 50% 35% 15%;
+  grid-gap: 15px;
+  justify-content: center;
+  padding: 5px 15px;
+  
+}
+
+input[type="text"],
+[type="date"] {
+  height: 25px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  box-shadow: 4px 4px 8px rgb(189, 203, 220), -4px -4px 8px rgb(255 255 255);
+}
+
+[type="submit"] {
+  padding: 4px 20px;
+  background-color: #11ff00;
+  border: none;
+  border-radius: 15px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: capitalize;
+  box-shadow: 4px 4px 8px rgb(189, 203, 220), -4px -4px 8px rgb(255 255 255);
+}
+
+.error{
+  text-align: center;
+  margin-top: 15px;
+}

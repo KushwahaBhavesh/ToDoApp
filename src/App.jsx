@@ -10,8 +10,9 @@ import ToDoTaskList from './Component/ToDoTaskList/ToDoTaskList'
 
 function App() {
   const storedTasks = JSON.parse(localStorage.getItem('toDoItems'));
-  const [toDoItems, setTodoItems] = useState(storedTasks);
+  const [toDoItems, setTodoItems] = useState(storedTasks||[]);
   const [loading, setLoading] = useState(true);
+
   //Localstorage implementation
   useEffect(() => {
     try {
@@ -48,7 +49,7 @@ function App() {
       <div className='Container'>
         <ToDoTitle />
         <hr />
-        <ToDoInput onInputHandle={InputHandle} /> 
+        <ToDoInput onInputHandle={InputHandle} />
         <hr />
         {loading
           ? <p>Loading...</p>
